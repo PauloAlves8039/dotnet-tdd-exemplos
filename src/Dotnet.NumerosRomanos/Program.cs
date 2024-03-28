@@ -13,6 +13,6 @@ internal class Program
 
         Console.WriteLine($"O valor '{valorRecebido}' foi convertido para o número: {resultado}");
 
-        Console.ReadLine();
+        Console.ReadKey();
     }
 }
