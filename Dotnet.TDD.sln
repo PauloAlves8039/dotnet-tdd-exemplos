@@ -19,9 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnet.LojaVirtual.Tests", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnet.LojaVirtual", "src\Dotnet.LojaVirtual\Dotnet.LojaVirtual.csproj", "{76E86623-32A1-4DB5-8E91-65AB91A8F474}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.Corretora", "src\Dotnet.Corretora\Dotnet.Corretora.csproj", "{6C400CB0-1752-4631-BCC3-5D6A6114B8EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnet.Corretora", "src\Dotnet.Corretora\Dotnet.Corretora.csproj", "{6C400CB0-1752-4631-BCC3-5D6A6114B8EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.Corretora.Tests", "test\Dotnet.Corretora.Tests\Dotnet.Corretora.Tests.csproj", "{5337860F-92C9-4845-951B-5F3DC8BD447E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnet.Corretora.Tests", "test\Dotnet.Corretora.Tests\Dotnet.Corretora.Tests.csproj", "{5337860F-92C9-4845-951B-5F3DC8BD447E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.FormasGeometricas", "src\Dotnet.FormasGeometricas\Dotnet.FormasGeometricas.csproj", "{354232A1-4619-496D-83AB-6129880381BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.FormasGeometricas.Tests", "test\Dotnet.FormasGeometricas.Tests\Dotnet.FormasGeometricas.Tests.csproj", "{84E1E249-39B6-496F-AA17-E2928103B622}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +65,14 @@ Global
 		{5337860F-92C9-4845-951B-5F3DC8BD447E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5337860F-92C9-4845-951B-5F3DC8BD447E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5337860F-92C9-4845-951B-5F3DC8BD447E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{354232A1-4619-496D-83AB-6129880381BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{354232A1-4619-496D-83AB-6129880381BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{354232A1-4619-496D-83AB-6129880381BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{354232A1-4619-496D-83AB-6129880381BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84E1E249-39B6-496F-AA17-E2928103B622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84E1E249-39B6-496F-AA17-E2928103B622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84E1E249-39B6-496F-AA17-E2928103B622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84E1E249-39B6-496F-AA17-E2928103B622}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +86,8 @@ Global
 		{76E86623-32A1-4DB5-8E91-65AB91A8F474} = {BF27796C-01C0-403C-A003-84DF69725A4A}
 		{6C400CB0-1752-4631-BCC3-5D6A6114B8EA} = {BF27796C-01C0-403C-A003-84DF69725A4A}
 		{5337860F-92C9-4845-951B-5F3DC8BD447E} = {2F4CE87C-CFA9-4A27-9667-E7AF88AEF500}
+		{354232A1-4619-496D-83AB-6129880381BC} = {BF27796C-01C0-403C-A003-84DF69725A4A}
+		{84E1E249-39B6-496F-AA17-E2928103B622} = {2F4CE87C-CFA9-4A27-9667-E7AF88AEF500}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {80DEECA8-BB65-47BA-983E-6CF08E182C82}
