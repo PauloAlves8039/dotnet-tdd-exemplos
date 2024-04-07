@@ -4,7 +4,7 @@ namespace Dotnet.Empresa.Tests
     {
         CalculadoraDeSalario calculadoraDeSalario = new CalculadoraDeSalario();
 
-        [Fact]
+        [Fact(DisplayName = "CalculadoraDeSalario - Retorna cálculo de salário abaixo do limite para desenvolvedor")]
         public void CalculadoraDeSalario_DeveCalcularSalarioParaDesenvolvedoresComSalarioAbaixoDoLimite()
         {
             var desenvolvedor = new Funcionario("Paulo", 1500.0, Cargo.DESENVOLVEDOR);
@@ -16,7 +16,7 @@ namespace Dotnet.Empresa.Tests
             Assert.Equal(salarioEsperado, salario);
         }
 
-        [Fact]
+        [Fact(DisplayName = "CalculadoraDeSalario - Retorna cálculo de salário acima do limite para desenvolvedor")]
         public void CalculadoraDeSalario_DeveCalcularSalarioParaDesenvolvedoresComSalarioAcimaDoLimite()
         {
             var desenvolvedor = new Funcionario("Paulo", 4000.0, Cargo.DESENVOLVEDOR);
@@ -28,7 +28,7 @@ namespace Dotnet.Empresa.Tests
             Assert.Equal(salarioEsperado, salario);
         }
 
-        [Fact]
+        [Fact(DisplayName = "CalculadoraDeSalario - Retorna cálculo de salário abaixo do limite para BDA")]
         public void CalculadoraDeSalario_DeveCalcularSalarioParaDBAsComSalarioAbaixoDoLimite()
         {
             var dba = new Funcionario("Paulo", 500.0, Cargo.DBA);
@@ -40,7 +40,7 @@ namespace Dotnet.Empresa.Tests
             Assert.Equal(salarioEsperado, salario);
         }
 
-        [Fact]
+        [Fact(DisplayName = "CalculadoraDeSalario - Retorna cálculo de salário acima do limite para BDA")]
         public void CalculadoraDeSalario_DeveCalcularSalarioParaDBAsComSalarioAcimaDoLimite()
         {
             var dba = new Funcionario("Paulo", 3000.0, Cargo.DBA);
@@ -52,7 +52,7 @@ namespace Dotnet.Empresa.Tests
             Assert.Equal(salarioEsperado, salario);
         }
 
-        [Fact]
+        [Fact(DisplayName = "CalculadoraDeSalario - Retorna cálculo de salário abaixo do limite para Testadores")]
         public void CalculadoraDeSalario_DeveCalcularSalarioParaTestadoresComSalarioAbaixoDoLimite()
         {
             var testador = new Funcionario("Paulo", 2000.0, Cargo.TESTADOR);
@@ -64,7 +64,7 @@ namespace Dotnet.Empresa.Tests
             Assert.Equal(salarioEsperado, salario);
         }
 
-        [Fact]
+        [Fact(DisplayName = "CalculadoraDeSalario - Retorna cálculo de salário acima do limite para Testadores")]
         public void CalculadoraDeSalario_DeveCalcularSalarioParaTestadoresComSalarioAcimaDoLimite()
         {
             var testador = new Funcionario("Paulo", 3000.0, Cargo.TESTADOR);
