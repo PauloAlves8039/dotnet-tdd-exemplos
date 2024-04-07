@@ -4,7 +4,7 @@ namespace Dotnet.LojaVirtual.Tests
     {
         CarrinhoDeCompras carrinhoDeCompras = new CarrinhoDeCompras();
 
-        [Fact]
+        [Fact(DisplayName = "EncontrarMenorPreco - Retorna preço zero com carrinho de compras vazio")]
         public void EncontrarMenorPreco_DeveRetornarZeroSeCarrinhoVazio()
         {
             var maiorPreco = new MaiorPreco();
@@ -16,7 +16,7 @@ namespace Dotnet.LojaVirtual.Tests
             Assert.Equal(valorEsperado, valorRecebido, 0.0001);
         }
 
-        [Fact]
+        [Fact(DisplayName = "EncontrarMenorPreco - Retorna item do carrinho de compras com um elemento")]
         public void EncontrarMenorPreco_DeveRetornarValorDoItemSeCarrinhoComUmElemento()
         {
             carrinhoDeCompras.AdicionarItem(new Item("Gelareira", 1, 900.0));
@@ -30,7 +30,7 @@ namespace Dotnet.LojaVirtual.Tests
             Assert.Equal(valorEsperado, valorRecebido, 0.0001);
         }
 
-        [Fact]
+        [Fact(DisplayName = "EncontrarMenorPreco - Retorna item com maior valor do carrinho de compras com vários elementos")]
         public void EncontrarMenorPreco_DeveRetornarMaiorValorSeCarrinhoContemMuitosElementos()
         {
             carrinhoDeCompras.AdicionarItem(new Item("Gelareira", 1, 900.0));
