@@ -31,9 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnet.ListaDeConvidados", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnet.ListaDeConvidados.Tests", "test\Dotnet.ListaDeConvidados.Tests\Dotnet.ListaDeConvidados.Tests.csproj", "{C41E209B-101B-4965-A318-62A78CA4C558}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.CalculosDiversos", "src\Dotnet.CalculosDiversos\Dotnet.CalculosDiversos.csproj", "{2D95F601-44E6-4B5A-B5A2-19E51717109A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnet.CalculosDiversos", "src\Dotnet.CalculosDiversos\Dotnet.CalculosDiversos.csproj", "{2D95F601-44E6-4B5A-B5A2-19E51717109A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.CalculosDiversos.Tests", "test\Dotnet.CalculosDiversos.Tests\Dotnet.CalculosDiversos.Tests.csproj", "{B111637D-2CFC-4EE0-B87A-590D0D20E788}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnet.CalculosDiversos.Tests", "test\Dotnet.CalculosDiversos.Tests\Dotnet.CalculosDiversos.Tests.csproj", "{B111637D-2CFC-4EE0-B87A-590D0D20E788}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
