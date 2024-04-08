@@ -4,7 +4,7 @@
     {
         CarrinhoDeCompras carrinhoDeCompras = new CarrinhoDeCompras();
 
-        [Fact]
+        [Fact(DisplayName = "RemoverItem - Retorna item removido do carrinho de compras")]
         public void RemoverItem_DeveRemoverItemCorretamenteDoCarrinho()
         {
             var item = new Item("Calça Jeans", 1, 59.99);
@@ -16,7 +16,7 @@
             Assert.DoesNotContain(item, carrinhoDeCompras.Itens);
         }
 
-        [Fact]
+        [Fact(DisplayName = "RemoverItem - Não retorna item inexistente no carrinho de compras")]
         public void RemoverItem_NaoDeveRemoverItemSeItemNaoExistirNoCarrinho()
         {
             var item1 = new Item("Camiseta", 2, 29.99);
@@ -30,7 +30,7 @@
         }
 
 
-        [Fact]
+        [Fact(DisplayName = "CalcularPrecoTotal - Retorna valor total do carrinho de compras")]
         public void CalcularPrecoTotal_DeveRetornarPrecoTotalCorretoDoCarrinho()
         {
             var item1 = new Item("Camiseta", 2, 29.99);
@@ -46,7 +46,7 @@
             Assert.Equal(precoTotalEsperado, precoTotalRecebido);
         }
 
-        [Fact]
+        [Fact(DisplayName = "CalcularPrecoTotal - Retorna valor zero do carrinho de compras sem preço")]
         public void CalcularPrecoTotal_DeveRetornarZeroSeTodosOsItensTiveremPrecoZero()
         {
             var item1 = new Item("Camiseta", 2, 0.0);
